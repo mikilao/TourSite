@@ -1,11 +1,17 @@
 
 <html>
     <head>
-        <script src="https://kit.fontawesome.com/749ff0ef09.js"></script>
-        <link rel="stylesheet" type="text/css" href="portstyle.css">
-        <link rel="stylesheet" type="text/css" href="css/simplelightbox.min.css">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <!--<script src="https://kit.fontawesome.com/749ff0ef09.js"></script>-->
+        
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <!--<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        
+       <link rel="stylesheet" type="text/css" href="portstyle.css">
         <link href="https://fonts.googleapis.com/css?family=Catamaran&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet"> 
+       
       <title>Eat Drink Conquer Tours</title>
     </head>
 
@@ -17,30 +23,107 @@
         <nav class="navbar sticky-top navbar-dark bg-dark">
             <a class="navbar-nav active" href="#home"><i class="fas fa-city"></i>Home</a>
           <a class="navbar-nav" href="#tour.html"><i class="fas fa-city"></i>Tours</a>
-            <a class="navbar-nav " href="#info.html"><i class="fas fa-hiking"></i>Adventures</a>
+            <a class="navbar-nav " href="#adventures.html"><i class="fas fa-hiking"></i>Adventures</a>
             <a class="navbar-nav " href="#aboutus.html"> About Us</a>
            </nav>
         </div> 
       </div>
   </div>
       <div class="header">
-        <div class="container-fluid">
-          <div class="col ">
+        <div class="container" id="headliner" >
+          <div class="col">
   <h1>Eat Drink Conquer Tours</h1>
   <p>Your guide to San Francisco</p>
 </div>
         </div>
-      </div>
-        <section class="section-a">
-            <div class="container">
-                <div class="row row-content">
+      </div> 
+        <section class="section-c">
+                  <div class="container">
+                    <div class="row row-content">
+                    <div class="col-md d-block " style="width: 200px;">
+                                        
                     <h1>Tours</h1>
                     <p>Bacon ipsum dolor amet cupim meatball pig andouille. Veniam elit landjaeger burgdoggen, ipsum consequat meatloaf eu nulla tri-tip consectetur sirloin aliqua cow est. Deserunt chuck meatloaf ad turkey ribeye in dolor irure quis. Eiusmod tongue sausage fatback aute non, pork belly ullamco jowl. Ham excepteur ea, ullamco pork belly capicola fugiat dolore pastrami jerky turducken kielbasa labore pork chop shoulder. Sed nulla ad ut kevin cupim. Officia qui ipsum sed.</p>
-                    <a href="#" class="btn">Book a Tour</a>
+                       
+                  <button type="button" data-toggle="modal" data-target="#bookingModal">  Book a Tour</button>
                 </div>
-                <img class="portrait" src="https://ctl.s6img.com/society6/img/h2-zg0q1YhMtchZ_aYPV8AAIhMg/w_700/shams/swatch/~artwork,fw_6109,fh_3508,fx_12,fy_-455,iw_6104,ih_5189/s6-0060/a/25328157_5706921/~~/golden-gate-bridge-vector-art-shams.jpg">
+                    <div class="col d-flex col-sm-none">
+                     <img class="portrait" src="https://dr5dymrsxhdzh.cloudfront.net/blog/images/afc8f1c76/2015/05/golden-gate-bridge-at-sunset-san-francisco-california-usa-picture-id921956634.jpg">
+       </div> 
+                  </div>
+                    </div>
+                     </section>
+          <section class="section-b">
+              <div class="container">
+                  <div class=" row row-content">
+                      <div class="col-md-8">
+                          <h3 class="justify-content-lg-center " id="headliner">Spicy jalapeno bacon ipsum dolor amet shoulder pancetta short loin jerky pastrami  Salami filet mignon pig tri-tip, ham tenderloin pork drumstick short loin jerky bacon rump cow frankfurter. Ball tip tail meatloaf cow </h3>
+                           <h5 class="headliner"> Venison ground round short loin swine, andouille prosciutto shank turkey pastrami shankle. Short ribs turducken boudin biltong pork chop ribeye. Landjaeger brisket rump beef turkey bresaola, pancetta t-bone venison. Shank bacon pork beef porchetta, prosciutto sausage ham buffalo frankfurter. Sausage beef jerky, cupim tongue tail drumstick picanha shank short loin t-bone ribeye chuck tri-tip. Boudin landjaeger beef ribs chislic.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod fugiat ullam consectetur voluptatem mollitia, accusamus quidem aliquid tempore id perspiciatis blanditiis harum ipsum nisi optio quasi! Vel temporibus a fugiat!</h5>
+                      </div>
+                  </div>
+              </div>
+          </section>
+          <!--Booking Modal-->
+          <div class="modal" id="bookingModal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Book Your Tour</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form id="contact-form" class="form-control-wrap">
+                    <div class="container-fluid">
+                         <div class="row row-content">
+                                <div class="col-sm ">
+                                    <div class="form-group">
+                                        <label for="form-label">Firstname </label>
+                                        <input id="form-name" type="text" name="name" class="form-control" placeholder="First name " >
+                                       
+                                    </div>
+                                </div>
+                                <div class="col-sm ">
+                                    <div class="form-group">
+                                        <label for="form-lastname">Lastname </label>
+                                        <input id="form-lastname" type="text" name="lastname" class="form-control" placeholder="Last name"  >
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row row-content">
+                                <div class="col ">
+                                    <div class="form-group">
+                                        <label for="form-email">Email</label>
+                                        <input id="form-email" type="email" name="email" class="form-control" placeholder="Email"  >
+                                       
+                                    </div>
+                                </div>
+                                <div class="col-sm">
+                                    <div class="form-group">
+                                        <label for="form-label">Please specify your need </label>
+                                        <select id="form-book" name="book" class="form-control" >
+                                            <option value="Book a tour">Book a Tour</option>
+                                            <option value="Request quotation">Request private tours</option>
+                                            <option value="Request information">Request more information</option>
+                                            <option value="Other">Other</option>
+                                        </select>
+                                        </form>
+                                    </div>
+                                </div>
+                               </div>
+          </div>
+                </div> 
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary">Book</button>
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                </div>
+              </div>
             </div>
-          
+          </div>
+
+          <section class="section-c">
           <div class="container-fluid" id="menu-links">
   <div class="row row-content">
     <div class="col-4 col-sm">
@@ -77,9 +160,9 @@
                 <div class='col'>
                     <h3>Important Links</h3>
                     <ul>
-                        <li><a href="#">Example</a></li>
-                        <li><a href="#">Example</a></li>
-                        <li><a href="#">Example</a></li>
+                        <li><a href="https://www.yelp.com">Yelp</a></li>
+                        <li><a href="https://www.Tripadvisor.com">Tripadvisor</a></li>
+                        <li><a href="https://www.AirBnb.com">Airbnb</a></li>
                     </ul>
                 </div>
                 <div class="col"> 
@@ -108,5 +191,13 @@
                 </div>
             </div>
         </footer>
-    </body>
+        </body>
+        <script src="http://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+        <script type="text/javascript">
+          $(".btn").click(function(){
+              $('.modal').modal('show');
+          });
+          </script>
 </html>
