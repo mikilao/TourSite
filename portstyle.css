@@ -61,9 +61,12 @@ ul{
   color: white;
   display: block;
 }
+#copy{
+	align-items: center;
+}
 .section-a {
 	margin: 2rem 0;
- 
+	
 } 
 .section-a .container{ 
 	display: grid;

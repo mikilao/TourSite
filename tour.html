@@ -1,7 +1,7 @@
 
 <html>
     <head>
-        <!--<script src="https://kit.fontawesome.com/749ff0ef09.js"></script>-->
+        <script src="https://kit.fontawesome.com/749ff0ef09.js"></script>
         
          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -21,10 +21,10 @@
           <div class= "row row-content">
             <div class="col ">
         <nav class="navbar sticky-top navbar-dark bg-dark">
-            <a class="navbar-nav active" href="#home"><i class="fas fa-city"></i>Home</a>
-          <a class="navbar-nav" href="#tour.html"><i class="fas fa-city"></i>Tours</a>
-            <a class="navbar-nav " href="#adventures.html"><i class="fas fa-hiking"></i>Adventures</a>
-            <a class="navbar-nav " href="#aboutus.html"> About Us</a>
+            <a class="navbar-nav active" href="tour.html"><i class="fas fa-city"></i>Home</a>
+          <a class="navbar-nav" href="tour.html"><i class="fas fa-city"></i>Tours</a>
+            <a class="navbar-nav " href="adventures.html"><i class="fas fa-hiking"></i>Adventures</a>
+            <a class="navbar-nav " href="aboutus.html"> About Us</a>
            </nav>
         </div> 
       </div>
@@ -56,9 +56,9 @@
           <section class="section-b">
               <div class="container">
                   <div class=" row row-content">
-                      <div class="col-md-8">
+                      <div class="col-md-12">
                           <h3 class="justify-content-lg-center " id="headliner">Spicy jalapeno bacon ipsum dolor amet shoulder pancetta short loin jerky pastrami  Salami filet mignon pig tri-tip, ham tenderloin pork drumstick short loin jerky bacon rump cow frankfurter. Ball tip tail meatloaf cow </h3>
-                           <h5 class="headliner"> Venison ground round short loin swine, andouille prosciutto shank turkey pastrami shankle. Short ribs turducken boudin biltong pork chop ribeye. Landjaeger brisket rump beef turkey bresaola, pancetta t-bone venison. Shank bacon pork beef porchetta, prosciutto sausage ham buffalo frankfurter. Sausage beef jerky, cupim tongue tail drumstick picanha shank short loin t-bone ribeye chuck tri-tip. Boudin landjaeger beef ribs chislic.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod fugiat ullam consectetur voluptatem mollitia, accusamus quidem aliquid tempore id perspiciatis blanditiis harum ipsum nisi optio quasi! Vel temporibus a fugiat!</h5>
+                           <h5 id="headliner"> Venison ground round short loin swine, andouille prosciutto shank turkey pastrami shankle. Short ribs turducken boudin biltong pork chop ribeye. Landjaeger brisket rump beef turkey bresaola, pancetta t-bone venison. Shank bacon pork beef porchetta, prosciutto sausage ham buffalo frankfurter. Sausage beef jerky, cupim tongue tail drumstick picanha shank short loin t-bone ribeye chuck tri-tip. Boudin landjaeger beef ribs chislic.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod fugiat ullam consectetur voluptatem mollitia, accusamus quidem aliquid tempore id perspiciatis blanditiis harum ipsum nisi optio quasi! Vel temporibus a fugiat!</h5>
                       </div>
                   </div>
               </div>
@@ -116,7 +116,7 @@
           </div>
                 </div> 
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-primary">Book</button>
+                  <button type="button" class="btn btn-primary"  onclick="myFunction()" >Book</button>
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
                 </div>
               </div>
@@ -146,9 +146,10 @@
         </section>
         <footer class="section-footer">
             <div class="container">
-                <div class="row row-content">
-                    <div class="col-6">
-                    <h2>Lorem ipsum</h2>
+                <div class="row ">
+                    <div class="col d-flex">
+                    <h2>Eat Drink Conquer</h2>
+                    <p>San Francisco Tour</p>
                     <a href="https://www.twitter.com">
                         <i class="fab fa-twitter fa-2x"></i>
                     <a href="https://www.facebook.com">
@@ -157,7 +158,7 @@
                         <i class="fab fa-youtube fa-2x"></i>
                     </a></div>
                 </div>
-                <div class='col'>
+                <div class='col-4'>
                     <h3>Important Links</h3>
                     <ul>
                         <li><a href="https://www.yelp.com">Yelp</a></li>
@@ -165,12 +166,12 @@
                         <li><a href="https://www.AirBnb.com">Airbnb</a></li>
                     </ul>
                 </div>
-                <div class="col"> 
+                <div class="col "> 
                     <h3>Subscribe</h3>
                     <p>Cupim ribeye chuck porchetta, frankfurter doner boudin</p>
-                    <form class="email-form" method="POST" data-nelify="true">
+                    <form class="email-form" >
                         <div class="email-form">
-                        <span class="form-control-wrap">
+                        <span class="form-control-sm">
                             <input
                             type="email"
                             name="email"
@@ -180,7 +181,7 @@
                             placeholder="E-mail";
                             />
                         </span>
-                    <button type="submit" class="form-control submit">
+                    <button type="submit"  onclick="myFunction()" class="form-control submit">
                         <i class="fas fa-chevron-right"></i>
         
                     </button>
