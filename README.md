@@ -1,3 +1,3 @@
 # TourSite
 Portfolio site-
-tour company for a San Francisco Tour Company
+Website for a San Francisco Tour Company
